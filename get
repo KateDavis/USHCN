@@ -1,0 +1,14 @@
+#!/usr/bin/tcsh
+
+rm -f  ushcn.tavg.latest.FLs.52i.tar.gz
+rm -f  ushcn.tavg.latest.tob.tar.gz
+rm -f  ushcn.tavg.latest.raw.tar.gz
+
+wget ftp://ftp.ncdc.noaa.gov/pub/data/ushcn/v2.5/ushcn.tavg.latest.FLs.52i.tar.gz
+wget ftp://ftp.ncdc.noaa.gov/pub/data/ushcn/v2.5/ushcn.tavg.latest.tob.tar.gz
+wget ftp://ftp.ncdc.noaa.gov/pub/data/ushcn/v2.5/ushcn.tavg.latest.raw.tar.gz
+
+tar xzvf ushcn.tavg.latest.FLs.52i.tar.gz
+tar xzvf ushcn.tavg.latest.tob.tar.gz
+tar xzvf ushcn.tavg.latest.raw.tar.gz
+
